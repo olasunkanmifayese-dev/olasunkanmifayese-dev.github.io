@@ -11,6 +11,7 @@ body {
     border: 1px solid black;
     border-radius: 25px;
     box-shadow: 5px 0 0;
+    background-image: ;
     background-position: right;
     background-repeat: repeat-y;
 }
@@ -30,6 +31,7 @@ h2 {
 }
 img {
     float: left;
+    margin-left: 1.5em;
 }
 .shadow {
     text-shadow: 2px 2px 2px rgb(128, 0, 0);
