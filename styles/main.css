@@ -1,8 +1,7 @@
 body {
     background-image: linear-gradient(to bottom, white 0%, #facd8a 100%);
- body {
-
- }   
+}
+ body {   
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
     width: 1000px;
@@ -45,8 +44,22 @@ main h3 {
     box-shadow: 3px 3px 4px red;
     padding: 1em;
 }
+main nav {
+    margin: 1.5em 2 em 1.5em;
+    border: 5px dashed blue;
+    border-radius: 20px;
+    box-shadow: 3px 3px  4px 4px red;
+    padding: .5em;
+}
 #list {
 line-height: 1.5em;
+}
+div.contact{
+    margin: 1.5em 2em o 2em;
+    border: 5px dotted blue;
+    border-radius: 20px;
+    box-shadow: 3px 3px 4px 4px red;
+    padding: lem;
 }
 footer p.copyright {
     text-align: center;
