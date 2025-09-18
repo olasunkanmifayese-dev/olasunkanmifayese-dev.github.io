@@ -1,4 +1,4 @@
-body {
+html {
     background-image: linear-gradient(to bottom, white 0%, #facd8a 100%);
 }
  body {   
@@ -11,7 +11,7 @@ body {
     border: 1px solid black;
     border-radius: 25px;
     box-shadow: 5px 0 0;
-    background-image: ;
+    background-image: white;
     background-position: right;
     background-repeat: repeat-y;
 }
