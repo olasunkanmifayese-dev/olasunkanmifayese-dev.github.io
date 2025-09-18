@@ -11,6 +11,8 @@ body {
     border: 1px solid black;
     border-radius: 25px;
     box-shadow: 5px 0 0;
+    background-position: right;
+    background-repeat: repeat-y;
 }
 a:focus, a:hover {
     font-style: italic;
@@ -59,7 +61,7 @@ div.contact{
     border: 5px dotted blue;
     border-radius: 20px;
     box-shadow: 3px 3px 4px 4px red;
-    padding: lem;
+    padding: ;
 }
 footer p.copyright {
     text-align: center;
