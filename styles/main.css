@@ -3,9 +3,9 @@ html {
 }
  body {   
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
+    font-size: 105%;
     width: 1000px;
-    background-color: white;
+    background-color: whitesmoke;
     margin: 15px auto;
     padding: 15px 1.5em;
     border: 1px solid black;
@@ -35,7 +35,7 @@ img {
     margin-left: 2em;
 }
 .shadow {
-    text-shadow: 2px 2px 2px rgb(128, 0, 0);
+    text-shadow: 2px 2px 2px rgb(128, 5, 69);
 }
 main {
     clear: left;
