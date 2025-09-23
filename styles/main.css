@@ -10,10 +10,11 @@ html {
     padding: 15px 1.5em;
     border: 1px solid black;
     border-radius: 25px;
-    box-shadow: 5px 0 0;
-    background-image: white;
+    box-shadow: 5px 5px 0 0;
+    background-image: url(../images/Old+Logo.png) white;
     background-position: right;
     background-repeat: repeat-y;
+    background-attachment: fixed;
 }
 a:focus, a:hover {
     font-style: italic;
@@ -31,7 +32,7 @@ h2 {
 }
 img {
     float: left;
-    margin-left: 1.5em;
+    margin-left: 2em;
 }
 .shadow {
     text-shadow: 2px 2px 2px rgb(128, 0, 0);
