@@ -88,10 +88,10 @@ footer p.copyright {
 p.fixed {
     width: auto;
     position: fixed;
-    bottom: 100px;
+    bottom: 10px;
     right: 5px;
     background-color: lightgreen;
     border: 2px maroon;
     padding: 2em;
-    height: 100px;
+    height: 10px;
 }
