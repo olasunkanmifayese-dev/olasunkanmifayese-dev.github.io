@@ -93,4 +93,5 @@ p.fixed {
     background-color: lightgreen;
     border: 2px maroon;
     padding: 2em;
+    height: 100px;
 }
