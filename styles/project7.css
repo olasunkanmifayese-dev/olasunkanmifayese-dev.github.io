@@ -92,7 +92,6 @@ p.fixed {
     bottom: 200px;
     right: 5px;
     background-color: lightgreen;
-    border: 2px maroon;
+    border: 2px solid maroon;
     padding: 2em;
-    border-style: solid;
 }
