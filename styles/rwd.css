@@ -102,7 +102,7 @@ footer {
     text-align: center;
     font-size: .8em;
 }
-@media only screen and (max-width: 700pm) {
+@media only screen and (max-width: 700px) {
 
     .menu-button-container {
     display: flex;
