@@ -1,0 +1,207 @@
+
+/* exam.css — MGIS 3320 Coding Exam
+   Implements layout and styles per instructions.
+   - Body width: 95%; margin: 15px auto
+   - Background image on the right, repeat-y, fixed (doesn't scroll with page)
+   - Article width: 75%
+   - Aside width: 20%, fixed
+   - Menu bar, colors, fonts, margins, borders, paddings
+   - Lines below the menu, between columns, above footer, around the body
+*/
+
+:root{
+  --body-border: 2px solid #333;
+  --rule-color: #444;
+  --rule-thickness: 2px;
+  --gap: 20px;
+  --sidebar-w: 20%;
+  --article-w: 75%;
+  --font-ui: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+}
+
+*{box-sizing: border-box;}
+
+html, body { height: 100%; }
+
+body{
+  width: 95%;
+  margin: 15px auto;
+  font-family: var(--font-ui);
+  line-height: 1.6;
+  color: #111;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/3f/Transparent_Checkered_Background.png');
+  background-position: right top;
+  background-repeat: repeat-y;
+  background-attachment: fixed; /* doesn't scroll with the page */
+  border: var(--body-border); /* around the body */
+  padding: 0;
+}
+
+.page-wrap{
+  position: relative;
+  min-height: 100%;
+  background-color: #fff;
+}
+
+/* Header & Menu */
+header{
+  padding: 12px var(--gap) 0;
+}
+
+header > h1{
+  margin: 0 0 8px;
+  font-size: 1.75rem;
+}
+
+nav .menu{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  border-bottom: none;
+}
+
+nav .menu li a{
+  display: inline-block;
+  padding: 10px 14px;
+  text-decoration: none;
+  color: #0b3d91;
+  border: 1px solid #0b3d91;
+  border-radius: 6px;
+}
+
+nav .menu li a[aria-current="page"]{
+  background: #0b3d91;
+  color: #fff;
+}
+
+.rule{
+  height: var(--rule-thickness);
+  background: var(--rule-color);
+}
+
+.rule-below-menu{ margin-top: 10px; }
+
+/* Layout: aside fixed; article flows with left margin so the two appear as columns */
+aside{
+  position: fixed;
+  top: 120px;
+  left: calc(2px + 15px + 10px); /* approximate body border + margin compensation */
+  width: var(--sidebar-w);
+  padding: 14px;
+  background: #f8f8f8;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  max-height: 75vh;
+  overflow: auto; /* if content exceeds viewport */
+}
+
+.aside-title{
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+}
+
+.toc{
+  margin: 0;
+  padding-left: 20px;
+  list-style-type: decimal; /* adjust if your screenshot shows a different style */
+}
+
+.toc li{ margin: 6px 0; }
+
+.toc a{
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px dotted #888;
+}
+
+.toc a:hover, .toc a:focus{
+  color: #000;
+  border-bottom-style: solid;
+}
+
+/* Main & Article */
+main{
+  padding: 10px var(--gap) 30px;
+  display: block;
+}
+
+article{
+  width: var(--article-w);
+  margin-left: calc(var(--sidebar-w) + 40px); /* leave room for fixed aside + gap */
+  padding-right: 10px;
+  border-right: var(--rule-thickness) solid var(--rule-color); /* line between columns */
+}
+
+article h2{
+  margin-top: 28px;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 6px;
+}
+
+article p{
+  text-align: justify;
+  margin: 12px 0 20px;
+}
+
+/* First letter styling: bigger, italic, bold */
+article p::first-letter{
+  font-size: 2.4em;
+  font-style: italic;
+  font-weight: 700;
+  float: left;
+  line-height: 0.9;
+  padding-right: 6px;
+}
+
+/* Inline image that the following paragraph wraps around */
+.inline-image{
+  float: right;
+  margin: 0 0 10px 16px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.inline-image img{
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Footer */
+footer{
+  padding: 10px var(--gap) 20px;
+}
+
+.rule-above-footer{
+  margin-top: 14px;
+}
+
+footer p{
+  margin: 10px 0 0;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+footer a{
+  color: #0b3d91;
+  text-decoration: none;
+  border-bottom: 1px dotted currentColor;
+}
+footer a:hover{ border-bottom-style: solid; }
+
+/* Accessibility helpers */
+.visually-hidden{
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+  white-space: nowrap;
+}
