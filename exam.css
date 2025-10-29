@@ -1,11 +1,11 @@
 :root{
-  --body-border: 2px solid #333;
-  --rule-color: #444;
-  --rule-thickness: 2px;
-  --gap: 20px;
-  --sidebar-w: 20%;
-  --article-w: 75%;
-  --font-ui: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  body-border: 2px solid #333;
+  rule-color: #444;
+  rule-thickness: 2px;
+  gap: 20px;
+  sidebar-w: 20%;
+  article-w: 75%;
+  font-ui: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
 }
 
 *{box-sizing: border-box;}
