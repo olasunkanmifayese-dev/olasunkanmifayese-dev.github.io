@@ -76,6 +76,8 @@ nav .menu li a[aria-current="page"]{
 
 aside{
   position: fixed;
+  float: right;
+  background-color: rgba(0, 0, 255, 0.479);
   top: 120px;
   left: calc(2px + 15px + 10px); 
   width: var(--sidebar-w);
