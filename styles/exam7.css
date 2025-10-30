@@ -16,10 +16,15 @@ body {
 
 /* ===== Navigation Bar ===== */
 nav {
-  background-color: #333;
-  border-bottom: 2px solid #000;
-  text-align: center;
-  padding: 10px 0;
+    text-align: center;
+    display: block;
+    width: 175px;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-right: 2px solid white;
 }
 
 nav ul {
@@ -29,7 +34,7 @@ nav ul {
 }
 
 nav ul li {
-  display: inline-block;
+  display: block;
   margin: 0 20px;
 }
 
