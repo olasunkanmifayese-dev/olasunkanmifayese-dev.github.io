@@ -15,38 +15,38 @@ body {
 }    
 
 /* ===== Navigation Bar ===== */
-nav {
-    text-align: center;
-    display: block;
-    width: 175px;
-    padding: 1em 0;
-    text-decoration: none;
-    background-color: blue;
-    color: white;
-    font-weight: bold;
-    border-right: 2px solid white;
+.nav-box {
+  background-color: #cbe6f4;
+  border: 3px solid #ef8600;
+  padding: 18px 20px;
+  width: 350px;
+  font-family: Arial, sans-serif;
+  font-size: 17px;
+  margin: 20px auto;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  display: block;
-  margin: 0 20px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  color: #ffcc00;
+.nav-box a {
+  color: blue;
   text-decoration: underline;
+}
+
+.nav-box ol, 
+.nav-box ul {
+  margin-left: 23px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.nav-box ul {
+  list-style-type: square;
+}
+
+.nav-box ol {
+  list-style-type: upper-roman;
+}
+
+.nav-box li {
+  margin-bottom: 4px;
 }
 
 /* ===== Article and Section Headings ===== */
