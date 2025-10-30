@@ -18,11 +18,12 @@ body {
 .nav-box {
   background-color: #cbe6f4;
   border: 3px solid blue;
-  padding: 18px 20px;
+  padding: 20px;
   width: 350px;
   font-family: Arial, sans-serif;
   font-size: 17px;
   margin: 20px auto;
+  text-align: center;
 }
 
 .nav-box a {
@@ -57,6 +58,7 @@ article {
 }
 article {
   width: 75%;
+  margin: 20px auto;
   float: left;
   padding: 10px;
   box-sizing: border-box;
@@ -128,6 +130,10 @@ aside ul li a {
 aside ul li a:hover {
   color: #0066cc;
   text-decoration: underline;
+}
+
+aside a:hover {
+  text-decoration: none;
 }
 
 /* ===== Footer ===== */
