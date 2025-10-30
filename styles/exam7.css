@@ -94,10 +94,9 @@ aside {
   right: calc(2px + 15px + 10px);
   top: 120px;
   border: 1px solid #bbb;
-  padding-left: 15px;
   background-color: rgba(0, 0, 255, 0.479);
-  background: #f8f8f8;
-  height: 25%;
+  background: rgb(91, 91, 192);
+  height: 30%;
   overflow: auto;
   border-radius: 8px;
   max-height: 75vh;
@@ -106,7 +105,7 @@ aside {
 
 aside h3 {
   text-align: center;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid blue;
   padding-bottom: 5px;
 }
 
@@ -137,11 +136,11 @@ footer {
   padding-top: 0.5;
   margin-top: 2em;
   background-color: white;
-  color: white;
+  color: black;
 }
 
 footer a {
-  color: #ffcc00;
+  color: blue;
   text-decoration: none;
 }
 footer p.copyright {
