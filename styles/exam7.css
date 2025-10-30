@@ -51,6 +51,11 @@ nav ul li a:hover {
 
 /* ===== Article and Section Headings ===== */
 article {
+    column-gap: 3;
+    column-gap: 35px;
+    column-rule: 2px dotted blue;
+}
+article {
   width: 75%;
   float: left;
   border-right: 2px solid #000;
