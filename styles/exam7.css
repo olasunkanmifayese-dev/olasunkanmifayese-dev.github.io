@@ -17,7 +17,7 @@ body {
 /* ===== Navigation Bar ===== */
 .nav-box {
   background-color: #cbe6f4;
-  border: 3px solid #ef8600;
+  border: 3px solid blue;
   padding: 18px 20px;
   width: 350px;
   font-family: Arial, sans-serif;
