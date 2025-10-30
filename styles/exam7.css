@@ -61,13 +61,13 @@ article {
 article h1 {
   text-align: left;
   text-transform: uppercase;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid blue;
   padding-bottom: 5px;
 }
 
 article h2 {
-  color: #333;
-  border-bottom: 1px solid #aaa;
+  color: blue;
+  border-bottom: 1px solid blue;
   margin-top: 20px;
 }
 
