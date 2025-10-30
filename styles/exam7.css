@@ -65,13 +65,13 @@ article {
 
 article h1 {
   text-align: left;
-  border-bottom: 2px solid blue;
+  border-bottom: 2px dotted blue;
   padding-bottom: 5px;
 }
 
 article h2 {
   color: blue;
-  border-bottom: 1px solid blue;
+  border-bottom: 1px dotted blue;
   margin-top: 20px;
 }
 
