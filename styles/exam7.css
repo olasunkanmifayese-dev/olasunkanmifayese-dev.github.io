@@ -91,13 +91,17 @@ aside {
   width: 20%;
   float: right;
   position: fixed;
-  right: 15px;
+  right: calc(2px + 15px + 10px);
   top: 120px;
-  border-left: 2px solid #000;
+  border: 1px solid #bbb;
   padding-left: 15px;
-  background-color: #f1f1f1;
+  background-color: rgba(0, 0, 255, 0.479);
+  background: #f8f8f8;
   height: 25%;
-  overflow-y: auto;
+  overflow: auto;
+  border-radius: 8px;
+  max-height: 75vh;
+  width: var(--sidebar-w);
 }
 
 aside h3 {
