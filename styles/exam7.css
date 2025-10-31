@@ -14,23 +14,15 @@ body {
   background-attachment: fixed;
   box-shadow: 2px 2px 4px gray;
 }
-image {
-  height: 120;
-  width: 120;
-}
 
 /* ===== Navigation Bar ===== */
-#nav_exam {
-  border-bottom: 2px solid blue;
-  margin-bottom: 10px;
-}
-
 #nav_exam ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: blue;
+  border-bottom: 3px solid white;
 }
 
 #nav_exam li {
@@ -91,18 +83,18 @@ article img {
   width: 200px;
 }
 
-/* ===== Full-Width Dotted Page Breaks ===== */
+/* ===== Full-Width Page Break Line ===== */
 .page-break {
   border-top: 2px dotted black;
-  width: 100vw;
+  width: 100vw;            /* full browser width */
   position: relative;
   left: 50%;
   right: 50%;
-  margin-left: -50vw;
+  margin-left: -50vw;      /* centers the full-width line */
   margin-right: -50vw;
   clear: both;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   z-index: 1;
 }
 
@@ -117,7 +109,7 @@ aside {
   width: 20%;
   position: fixed;
   right: 20px;
-  top: 130px;
+  top: 140px;
   border: 2px solid blue;
   background-color: #cbe6f4;
   padding: 15px;
