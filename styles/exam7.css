@@ -62,6 +62,17 @@ body {
   list-style-type: upper-roman;
 }
 
+.nav-box ol ol {
+  list-style-type: disc;
+}
+
+.nav-box ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.nav-box a:hover {
+  color: darkblue;
+}
 .nav-box li {
   margin-bottom: 4px;
 }
