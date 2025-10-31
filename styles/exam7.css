@@ -84,6 +84,11 @@ article img {
   height: auto;
 }
 
+article p {
+  line-height: 1.5;
+  text-align: justify;
+  }
+
 /* ===== Full-Width Page Break Line ===== */
 .page-break {
   border-top: 2px dotted black;
