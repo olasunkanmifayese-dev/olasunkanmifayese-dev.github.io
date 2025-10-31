@@ -104,6 +104,22 @@ article h2 {
 }
 
 /* First letter styling for paragraphs */
+.container {
+  display: flex;
+  gap: 0;
+}
+
+.column {
+  flex: 1;
+  padding: 0 20px;
+  text-align: justify;
+}
+
+.divider {
+  border-left: 4px dashed blue;
+  height: auto;
+}
+
 article p::first-letter {
   font-size: 200%;
   font-weight: bold;
