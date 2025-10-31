@@ -1,4 +1,4 @@
-/* ===== Body ===== */
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 105%;
@@ -15,7 +15,6 @@ body {
   box-shadow: 2px 2px 4px gray;
 }
 
-/* ===== Navigation Bar ===== */
 #nav_exam ul {
   list-style-type: none;
   margin: 0;
@@ -47,7 +46,6 @@ body {
   color: yellow;
 }
 
-/* ===== Article ===== */
 article {
   width: 75%;
   float: left;
@@ -75,7 +73,6 @@ article p::first-letter {
   font-style: italic;
 }
 
-/* ===== Image ===== */
 article img {
   float: left;
   margin: 10px 15px 10px 0;
@@ -89,14 +86,13 @@ article p {
   text-align: justify;
   }
 
-/* ===== Full-Width Page Break Line ===== */
 .page-break {
   border-top: 2px dotted black;
-  width: 100vw;            /* full browser width */
+  width: 100vw;
   position: relative;
   left: 50%;
   right: 50%;
-  margin-left: -50vw;      /* centers the full-width line */
+  margin-left: -50vw;
   margin-right: -50vw;
   clear: both;
   margin-top: 30px;
@@ -109,8 +105,6 @@ article p {
     page-break-after: always;
   }
 }
-
-/* ===== Sidebar ===== */
 aside {
   width: 20%;
   position: fixed;
@@ -149,7 +143,6 @@ aside {
   color: darkblue;
 }
 
-/* ===== Footer ===== */
 footer {
   clear: both;
   border-top: 2px solid blue;
