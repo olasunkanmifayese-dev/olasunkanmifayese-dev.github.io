@@ -1,6 +1,6 @@
-#nav_menu ul { list-style-type: none; }
-#nav_menu ul li { float: left; }
-#nav_menu ul li a {
+#nav_exam ul { list-style-type: none; }
+#nav_exam ul li { float: left; }
+#nav_exam ul li a {
     text-align: center;
     display: block;
     width: 175px;
@@ -11,8 +11,8 @@
     color: white;
     font-weight: bold;
     border-right: 2px solid white; }
-#nav_menu ul li a.lastitem { border-right: none; }
-#nav_menu ul li a.current { color: yellow; }
+#nav_exam ul li a.lastitem { border-right: none; }
+#nav_exam ul li a.current { color: yellow; }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
