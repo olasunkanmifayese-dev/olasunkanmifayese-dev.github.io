@@ -1,65 +1,133 @@
-#nav_exam ul { list-style-type: none; }
-#nav_exam ul li { float: left; }
-#nav_exam ul li a {
-    text-align: center;
-    display: block;
-    width: 175px;
-    padding: 1em 0; /* padding above and below a
-    elements */
-    text-decoration: none;
-    background-color: blue;
-    color: white;
-    font-weight: bold;
-    border-right: 2px solid white; }
-#nav_exam ul li a.lastitem { border-right: none; }
-#nav_exam ul li a.current { color: yellow; }
-
+/* ===== Body ===== */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 105%;
-    width: 95%;
-    background-color: whitesmoke;
-    margin: 15px auto;
-    padding: 15px 1.5em;
-    border: 1px solid black;
-    border-radius: 25px;
-    box-shadow: 1px 1px 0 0;
-    background-image: url(../images/Old+Logo.png);
-    background-position: right;
-    background-repeat: repeat-y;
-    background-attachment: fixed;
-}    
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 105%;
+  width: 95%;
+  margin: 15px auto;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: white;
+  background-image: url("../images/Old+Logo.png");
+  background-repeat: repeat-y;
+  background-position: right;
+  background-attachment: fixed;
+  box-shadow: 2px 2px 4px gray;
+}
 
 /* ===== Navigation Bar ===== */
-.nav-box {
-  background-color: #cbe6f4;
-  border: 3px solid blue;
-  padding: 20px;
-  width: 350px;
-  font-family: Arial, sans-serif;
-  font-size: 17px;
-  margin: 20px auto;
+#nav_exam {
+  border-bottom: 2px solid blue;
+  margin-bottom: 10px;
+}
+
+#nav_exam ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: blue;
+}
+
+#nav_exam li {
+  float: left;
+}
+
+#nav_exam li a {
+  display: block;
+  color: white;
   text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-right: 2px solid white;
 }
 
-.nav-box a {
+#nav_exam li a:hover {
+  background-color: navy;
+}
+
+#nav_exam li a.current {
+  color: yellow;
+}
+
+/* ===== Article ===== */
+article {
+  width: 75%;
+  float: left;
+  text-align: justify;
+  column-count: 3;
+  column-gap: 35px;
+  column-rule: 3px dashed blue;
+}
+
+article h1 {
   color: blue;
-  text-decoration: underline;
+  border-bottom: 2px solid blue;
+  margin-bottom: 15px;
 }
 
-.nav-box ol, 
-.nav-box ul {
-  margin-left: 23px;
-  margin-top: 6px;
-  margin-bottom: 6px;
+article h2 {
+  color: blue;
+  border-bottom: 1px dotted blue;
+  margin-top: 25px;
 }
 
-.nav-box ul {
-  list-style-type: square;
+article p::first-letter {
+  font-size: 200%;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* ===== Image ===== */
+article img {
+  float: left;
+  margin: 10px 15px 10px 0;
+  border: 1px solid black;
+  width: 200px;
+}
+
+/* ===== Full-Width Dotted Page Breaks ===== */
+.page-break {
+  border-top: 2px dotted black;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  clear: both;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  z-index: 1;
+}
+
+@media print {
+  .page-break {
+    page-break-after: always;
+  }
+}
+
+/* ===== Sidebar ===== */
+aside {
+  width: 20%;
+  position: fixed;
+  right: 20px;
+  top: 130px;
+  border: 2px solid blue;
+  background-color: #cbe6f4;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
 .nav-box ol {
   list-style-type: upper-roman;
+  margin-left: 20px;
+}
+
+.nav-box ul {
+  list-style-type: square;
+  margin-left: 25px;
 }
 
 .nav-box ol ol {
@@ -70,113 +138,13 @@ body {
   list-style-type: lower-alpha;
 }
 
-.nav-box a:hover {
-  color: darkblue;
-}
-.nav-box li {
-  margin-bottom: 4px;
-}
-
-/* ===== Article and Section Headings ===== */
-article {
-    column-gap: 3;
-    column-gap: 35px;
-    column-rule: 2px solid blue;
-}
-article {
-  width: 75%;
-  margin: 20px auto;
-  float: left;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-article h1 {
-  text-align: left;
-  border-bottom: 2px dotted blue;
-  padding-bottom: 5px;
-}
-
-article h2 {
+.nav-box a {
   color: blue;
-  border-bottom: 1px dotted blue;
-  margin-top: 20px;
-}
-
-/* First letter styling for paragraphs */
-.container {
-  display: flex;
-  gap: 0;
-}
-
-.column {
-  flex: 1;
-  padding: 0 20px;
-  text-align: justify;
-}
-
-.divider {
-  border-left: 4px dashed blue;
-  height: auto;
-}
-
-article p::first-letter {
-  font-size: 200%;
-  font-weight: bold;
-  font-style: italic;
-}
-
-/* Image wrapping */
-article img {
-  float: left;
-  margin: 10px 15px 10px 0;
-  border: 1px solid #000;
-  width: 300px;
-}
-
-/* ===== Sidebar (Aside) ===== */
-aside {
-  width: 20%;
-  float: right;
-  position: fixed;
-  right: calc(2px + 15px + 10px);
-  top: 120px;
-  border: 1px solid #bbb;
-  background-color: rgba(0, 0, 255, 0.479);
-  background: #5b8ac0;
-  height: 28%;
-  overflow: auto;
-  max-height: 75vh;
-  width: var(--sidebar-w);
-}
-
-aside h3 {
-  text-align: center;
-  border-bottom: 1px solid blue;
-  padding-bottom: 5px;
-}
-
-aside ul {
-  list-style-type: square;
-  padding-left: 20px;
-}
-
-aside ul li {
-  margin-bottom: 10px;
-}
-
-aside ul li a {
-  text-decoration: none;
-  color: #333;
-}
-
-aside ul li a:hover {
-  color: #0066cc;
   text-decoration: underline;
 }
 
-aside a:hover {
-  text-decoration: none;
+.nav-box a:hover {
+  color: darkblue;
 }
 
 /* ===== Footer ===== */
@@ -184,8 +152,8 @@ footer {
   clear: both;
   border-top: 2px solid blue;
   text-align: center;
-  padding-top: 0.5;
-  margin-top: 2em;
+  margin-top: 40px;
+  padding: 10px;
   background-color: white;
   color: black;
 }
@@ -194,19 +162,7 @@ footer a {
   color: blue;
   text-decoration: none;
 }
-footer p.copyright {
-    text-align: center;
-    font-size: 80%;
-}
-p.fixed {
-    width: auto;
-    position: fixed;
-    bottom: 200px;
-    right: 5px;
-    background-color: lightgreen;
-    border: 2px solid maroon;
-    padding: 2em;
-}
+
 footer a:hover {
   text-decoration: underline;
 }
