@@ -80,7 +80,8 @@ article img {
   float: left;
   margin: 10px 15px 10px 0;
   border: 1px solid black;
-  width: 200px;
+  width: 25px;
+  height: auto;
 }
 
 /* ===== Full-Width Page Break Line ===== */
