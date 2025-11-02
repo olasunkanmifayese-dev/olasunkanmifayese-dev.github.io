@@ -80,7 +80,7 @@ aside {
   right: 30px;
   border-left: 2px solid #000;
   padding: 10px;
-  background-color: #fafa;
+  background-color: rgba(64, 133, 179, 0.973);
 }
 
 aside ul {
