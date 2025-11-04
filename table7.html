@@ -6,6 +6,103 @@
     <title>Q7</title>
 </head>
 <body>
-    
+<table class="first">
+<caption>IT Jobs and Salaries</caption>
+<tr>
+<th></th>
+<th>Job</th>
+<th>Salary</th>
+</tr>
+<tr>
+<td>1.</td>
+<td>Support Technician</td>
+<td>40-50k</td>
+</tr>
+<tr>
+<td>2.</td>
+<td>Business/System/Data Analyst</td>
+<td>50-80k</td>
+<tr>
+<td>3.</td>
+<td>Software/Web Developer</td>
+<td>60-90k</td>
+</tr>
+</table>
+<br><br>
+<table class="second">
+<caption>IT Jobs and Salaries</caption>
+</tr>
+<tr>
+<th></th>
+<th>Job</th>
+<th>Salary</th>
+</tr>
+<tr>
+<td>1.</td>
+<td>Support Technician</td>
+<td>40-50k</td>
+</tr>
+<tr>
+<td rowspan="3">2.</td>
+<td>Business Analyst</td>
+<td rowspan="3">50-80k</td>
+</tr>
+<tr>
+<td>System Analyst</td>
+</tr>
+<tr>
+<td>Data Analyst</td>
+</tr>
+<tr>
+<td rowspan="2">3.</td>
+<td>Software Developer</td>
+<td rowspan="2">60-90k</td>
+</tr>
+<tr>
+<td>Web Developer</td>
+</tr>
+</table>
+<br><br>
+table.first tr:nth-child(odd) {
+background-color: lightblue;
+}
+/*-----------------------------------------------------------*/
+table.second {
+border-collapse: collapse;
+border: 2px solid purple;
+caption-side: bottom;
+}
+table.second th {
+background-color: salmon;
+}
+table.second th, table.second td {
+padding: 0.7em;
+vertical-align: middle;
+border: 2px solid purple;
+}
+table.second thead tr:first-child{
+border-bottom: 2px solid purple;
+}
+4. With all the above code, your page should now display the first two tables like the ones in the screenshot.
+5. Now, it’s your turn to practice by working on the third table yourself.
+a. In the html file, the third <table> should include <thead> and <tbody>. For example, <thead> should include two rows
+(i.e., the TABLE 3: IT Jobs and Salary row and the Category, Job, and Salary row). Then, <tbody> include all other rows.
+b. In the css file, among other necessary things such as setting padding, be sure to set:
+• vertical-align: top; (to align the Category numbers 1, 2, and 3 to the top in the cells as shown in the
+screenshot.)
+• tr:first-child, tr:nth-child(…), and tr:last-child (to display borders exactly as shown in the screenshot).
+For example, table.third thead tr:first-child { border-top: 2px solid orangered; ….. }
+6. Then, add following code for the media query with max-width: 425px.
+@media only screen and (max-width: 425px) {
+th, td {
+display: block;
+}
+thead, td.number {
+display: none;
+padding: 0;
+}
+}
+
+</tr>
 </body>
 </html>
