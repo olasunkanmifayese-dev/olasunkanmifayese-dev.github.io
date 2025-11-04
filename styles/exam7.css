@@ -78,10 +78,8 @@ article p::first-letter {
 
 article img {
   float: left;
-  margin: 10px 15px 10px 0;
-  border: 1px solid black;
-  width: 25px;
-  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 article p {
