@@ -15,7 +15,7 @@ body {
   box-shadow: 2px 2px 4px gray;
 }
 
-#nav_exam ul {
+#navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -23,27 +23,29 @@ body {
   background-color: blue;
   border-bottom: 3px solid white;
   width: 1px;
+  justify-content: center;
 }
 
-#nav_exam li {
+#navbar li {
   float: left;
+  max-width: 40px;
 }
 
-#nav_exam li a {
+#navbar li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 20px;
+  padding: 14px 0;
   text-decoration: none;
   font-weight: bold;
   border-right: 2px solid white;
 }
 
-#nav_exam li a:hover {
+#navbar li a:hover {
   background-color: navy;
 }
 
-#nav_exam li a.current {
+#navbar li a.current {
   color: yellow;
 }
 
