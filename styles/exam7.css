@@ -15,38 +15,16 @@ body {
   box-shadow: 2px 2px 4px gray;
 }
 
-#navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: blue;
-  border-bottom: 3px solid white;
-  width: 1px;
-  justify-content: center;
-}
-
-#navbar li {
-  float: left;
-  max-width: 40px;
-}
-
-#navbar li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 0;
-  text-decoration: none;
-  font-weight: bold;
-  border-right: 2px solid white;
-}
-
-#navbar li a:hover {
-  background-color: navy;
-}
-
-#navbar li a.current {
-  color: yellow;
+#navbar ul li a {
+    text-align: center;
+    display: block;
+    width: 175px;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-right: 2px solid white;
 }
 
 article {
