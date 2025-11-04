@@ -22,6 +22,7 @@ body {
   overflow: hidden;
   background-color: blue;
   border-bottom: 3px solid white;
+  width: 1px;
 }
 
 #nav_exam li {
