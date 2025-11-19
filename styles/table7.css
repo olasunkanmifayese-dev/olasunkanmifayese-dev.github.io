@@ -51,7 +51,7 @@ table.third thead tr:first-child {
     background-color: #8ae68a;
     border-top: 2px solid orangered;       /* REQUIRED */
     border-bottom: 2px solid orangered;
-    text-align: center;
+    text-align: left;
     font-size: 20px;
 }
 
