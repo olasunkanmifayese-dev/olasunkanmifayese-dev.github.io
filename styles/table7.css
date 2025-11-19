@@ -35,37 +35,36 @@ table.second thead tr:first-child{
 border-bottom: 2px solid purple;
 
 }table.third {
-    width: 60%;
-    margin: 40px auto;
-    border-collapse: collapse;
-    font-family: Arial, sans-serif;
+margin: 40px auto;
+border-collapse: collapse;
+font-family: Arial, sans-serif;
 }
 
 table.third th,
 table.third td {
-    padding: 10px 12px;
-    vertical-align: top;   /* REQUIRED */
+padding: 10px 12px;
+vertical-align: top;   /* REQUIRED */
 }
 
 /* TITLE ROW BORDER (TOP) */
 table.third thead tr:first-child {
-    background-color: #8ae68a;
-    border-top: 2px solid orangered;       /* REQUIRED */
-    border-bottom: 2px solid orangered;
-    text-align: left;
-    font-size: 20px;
+background-color: #8ae68a;
+border-top: 2px solid orangered;       /* REQUIRED */
+border-bottom: 2px solid orangered;
+text-align: left;
+font-size: 20px;
 }
 
 /* HEADER ROW */
 table.third thead tr:nth-child(2) {
-    background-color: #8ae68a;
-    border-bottom: 2px solid orangered;     /* REQUIRED */
-    font-weight: bold;
+background-color: #8ae68a;
+border-bottom: 2px solid orangered;     /* REQUIRED */
+font-weight: bold;
 }
 
 /* BOTTOM BORDER ON LAST ROW */
 table.third tbody tr:last-child {
-    border-bottom: 2px solid orangered;     /* REQUIRED */
+border-bottom: 2px solid orangered;     /* REQUIRED */
 }
 
 /* GENERAL ROW BOTTOM BORDERS 
