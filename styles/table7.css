@@ -33,6 +33,7 @@ border: 2px solid purple;
 }
 table.second thead tr:first-child{
 border-bottom: 2px solid purple;
+
 }table.third {
     width: 60%;
     margin: 40px auto;
@@ -67,10 +68,10 @@ table.third tbody tr:last-child {
     border-bottom: 2px solid orangered;     /* REQUIRED */
 }
 
-/* GENERAL ROW BOTTOM BORDERS */
+/* GENERAL ROW BOTTOM BORDERS 
 table.third tbody tr {
     border-bottom: 1px solid orangered;
-}
+}*/
 
 /* MEDIA QUERY ( REQUIRED ) */
 @media only screen and (max-width: 425px) {
