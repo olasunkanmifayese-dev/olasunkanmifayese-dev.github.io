@@ -33,45 +33,53 @@ border: 2px solid purple;
 }
 table.second thead tr:first-child{
 border-bottom: 2px solid purple;
-}
-@media only screen and (max-width: 425px) {
-th, td {
-display: block;
-}
-thead, td.number {
-display: none;
-padding: 0;
-.salary-table {
+}table.third {
     width: 60%;
     margin: 40px auto;
     border-collapse: collapse;
     font-family: Arial, sans-serif;
-    text-align: left;
 }
 
-.salary-table th,
-.salary-table td {
+table.third th,
+table.third td {
     padding: 10px 12px;
-    border-bottom: 1px solid #e35c44;
-    font-size: 16px;
+    vertical-align: top;   /* REQUIRED */
 }
 
-.title-row th {
+/* TITLE ROW BORDER (TOP) */
+table.third thead tr:first-child {
     background-color: #8ae68a;
-    color: black;
-    font-size: 20px;
+    border-top: 2px solid orangered;       /* REQUIRED */
+    border-bottom: 2px solid orangered;
     text-align: center;
-    border-bottom: 3px solid #e35c44;
+    font-size: 20px;
 }
 
-.header-row th {
+/* HEADER ROW */
+table.third thead tr:nth-child(2) {
     background-color: #8ae68a;
+    border-bottom: 2px solid orangered;     /* REQUIRED */
     font-weight: bold;
-    border-bottom: 2px solid #e35c44;
 }
 
-.salary-table tr:last-child td {
-    border-bottom: 3px solid #e35c44; 
+/* BOTTOM BORDER ON LAST ROW */
+table.third tbody tr:last-child {
+    border-bottom: 2px solid orangered;     /* REQUIRED */
 }
+
+/* GENERAL ROW BOTTOM BORDERS */
+table.third tbody tr {
+    border-bottom: 1px solid orangered;
 }
+
+/* MEDIA QUERY ( REQUIRED ) */
+@media only screen and (max-width: 425px) {
+    th, td {
+        display: block;
+    }
+    thead,
+    td.number {
+        display: none;
+        padding: 0;
+    }
 }
