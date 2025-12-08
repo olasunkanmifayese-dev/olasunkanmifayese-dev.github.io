@@ -7,74 +7,87 @@
     <link rel="stylesheet" href="styles/form7.css">
 </head>
 <body>
+
+<form>
+
     <fieldset>
         <legend>Registration Information</legend>
+
         <label for="email">E-Mail:</label>
-        <input type="email" name="email" id="email"
-        autofocus required autocomplete="on"><br>
+        <input type="email" name="email" id="email" autofocus required autocomplete="on"><br>
+
         <label for="password">Password:</label>
         <input type="password" name="password" id="password" required
-        placeholder="At least 6 letters or numbers"
-        pattern="[a-zA-Z0-9]{6,}"
-        title="Must be at least 6 alphanumeric characters">
-        <br>
+               placeholder="At least 6 letters or numbers"
+               pattern="[a-zA-Z0-9]{6,}"
+               title="Must be at least 6 alphanumeric characters"><br>
+
         <label for="verify">Verify Password:</label>
         <input type="password" name="verify" id="verify" required><br>
     </fieldset>
+
     <fieldset>
         <legend>Member Information</legend>
+
         <label for="first_name">First Name:</label>
-        <input type="text" name="first_name" id="first_name"
-        required autocomplete="on"><br>
+        <input type="text" name="first_name" id="first_name" required autocomplete="on"><br>
+
         <label for="state">State:</label>
-        <input type="text" name="state" id="state" required
-        maxlength="2"
-        placeholder="2-character code"
-        autocomplete="on"><br>
+        <input type="text" name="state" id="state" required maxlength="2"
+               placeholder="2-character code" autocomplete="on"><br>
+
         <label for="zip">ZIP Code:</label>
         <input type="text" name="zip" id="zip" required
-        placeholder="5 or 9 digits"
-        pattern="^\d{5}(-\d{4})?$"
-        title="Either 5 or 9 digits"
-        autocomplete="on"><br>
+               placeholder="5 or 9 digits"
+               pattern="^\d{5}(-\d{4})?$"
+               title="Either 5 or 9 digits" autocomplete="on"><br>
+
         <label for="phone">Phone Number:</label>
         <input type="tel" name="phone" id="phone"
-        placeholder="999-999-9999"
-        pattern="\d{3}[\-]\d{3}[\-]\d{4}"
-        title="Must be 999-999-999 format"
-        autocomplete="on"><br>
+               placeholder="999-999-9999"
+               pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+               title="Must be 999-999-999 format"
+               autocomplete="on"><br>
     </fieldset>
+
     <fieldset>
         <legend>Member Information</legend>
+
         <label for="membership_type">Membership Type:</label>
-        <input type="text" name="membership_type" id="membership_type"
+        <select name="membership_type" id="membership_type" required autocomplete="on">
+            <option value="" disabled selected>Select membership type</option>
             <option value="junior">Junior</option>
             <option value="regular">Regular</option>
-            <option value="charter">charter</option>
-        required autocomplete="on"><br>
+            <option value="charter">Charter</option>
+        </select><br>
+
         <label for="start_date">Starting Date:</label>
-        <input type="date" name="start_date" id="start_date">
-        required autocomplete="on"><br>
+        <input type="date" name="start_date" id="start_date" required autocomplete="on"><br>
+
         <label for="ticket_for_guest">Ticket for Guests:</label>
-        <input type="number"name="ticket_for_guest" id="ticket_for_guest" min="1" max="4" value="2">
-        required autocomplete="on"><br>
+        <input type="number" name="ticket_for_guest" id="ticket_for_guest"
+               min="1" max="4" value="2" required autocomplete="on"><br>
     </fieldset>
-        <fieldset>
+
+    <fieldset>
         <legend>How Did You Hear About Us?</legend>
 
         <label for="referral">Referral:</label>
-        <select name="referral" id="referral">
+        <select name="referral" id="referral" required>
+            <option value="" disabled selected>Select one</option>
             <option value="web">Web Search</option>
             <option value="friend">Friend</option>
             <option value="ad">Advertisement</option>
             <option value="other">Other</option>
         </select><br>
     </fieldset>
+
     <fieldset>
         <legend>Comments</legend>
         <label for="comments">Comments:</label>
         <textarea name="comments" id="comments"></textarea><br>
     </fieldset>
+
     <fieldset id="buttons">
         <legend>Submit Your Membership</legend>
 
@@ -84,6 +97,8 @@
         <label></label>
         <input type="reset" value="Reset"><br>
     </fieldset>
+
 </form>
+
 </body>
 </html>
